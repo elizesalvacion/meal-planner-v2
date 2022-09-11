@@ -1,0 +1,70 @@
+html {
+  /*font-size: 10px;*/
+  /*10px / 16px = 0.625 = 62.5% */
+  /*percentage of user's browser font-size setting*/
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /*color: #343a40;*/
+}
+
+body {
+  margin: 4.8rem;
+}
+
+h1 .meal-grid {
+  margin: 0 auto;
+}
+
+.meal-img {
+  width: 15%;
+}
+
+.card-meal-container {
+  padding: 1.4rem;
+  margin: 0 auto;
+  margin-right: 4rem;
+}
+.card-meal {
+  margin: 0 auto;
+  padding: 0 !important;
+  overflow: hidden;
+  margin-bottom: 2.4rem;
+}
+
+.meal-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.meal-description {
+  display: grid;
+  gap: 4.5rem;
+  grid-template-columns: 2fr 1fr;
+}
+
+.meal-tags {
+  display: flex;
+  gap: 2rem;
+}
+
+.tags {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  background-color: seagreen;
+
+  padding: 1rem;
+  width: 7rem;
+  border-radius: 75rem;
+}
+
+.recipe-content {
+  font-size: 1.6rem;
+  /* padding: 1.2rem; */
+}
+
+.ing-list {
+  list-style: none;
+  margin: 0;
+}
