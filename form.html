@@ -1,0 +1,212 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/main.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Form</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how">How does it work?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#meals">Meal Plans</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#form">Try Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <form multi-step-form class="multi-step-form">
+
+        <div class="container form-card active " data-step>
+  
+            <div class="section-container bg-secondary row">
+              <span class="col col-sm-2 number" id="form1"
+                >01</span
+              >
+
+              <div class="col text-center ms-5">
+                <p class="h1 text-white">How much is your Budget?</p>
+                <div class="input-group input">
+                  <span class="input-group-text">Php</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    aria-label="Amount (to the nearest dollar)"
+                  />
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+            </div>
+        
+              <i data-next
+                class="mx-auto position-absolute top-50 end-0 translate-middle-y h1 text-primary bi bi-arrow-right-circle"
+                >
+              </i>
+            
+             
+          </div>
+       
+
+          <!-- FORM 2 -->
+          <div class="container form-card " data-step>
+            <div class="section-container bg-secondary row" id="form2">
+              <span class="col col-sm-2 number">02</span>
+
+              <div class="col text-center ms-5">
+                <div class="mb-5">
+                  <p class="h1 text-white">How many people?</p>
+                  <p></p>
+                </div>
+             
+                  <div class="input-group input">
+                    <input
+                     type="text"
+                     class="form-control"
+                     aria-label="Amount (to the nearest dollar)"
+                      />
+                  </div>
+                  
+              </div>
+                
+            </div>
+
+          <i data-previous
+            class="mx-auto position-absolute top-50 start-0 translate-middle-y h1 text-primary bi bi-arrow-left-circle"
+          ></i>
+          <i data-next
+          class="mx-auto position-absolute top-50 end-0 translate-middle-y h1 text-primary bi bi-arrow-right-circle"
+          ></i>
+        </div>
+          
+          <!-- FORM 3 -->
+          <div class="container form-card"  data-step>
+            <div class="section-container-form3 bg-secondary row" id="form2">
+              <span class=" display-1 text-white">03</span>
+              <div class= "row text-center">
+                <p class="h1 text-white mb-5">Type of Meal Plan?</p>
+                  <!-- CARD ONE -->
+                  <div class="col card mx-3">
+                    <div class="meal-plan-img-box">
+                      <img class="card-img-top" src="img/event-meal.jpg" />
+                    </div>
+                    <div class="card-body">
+                      <h3 class="text-primary card-title">Events Plan</h3>
+                      <p class="card-text">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Preparing for Big Holidays</li>
+                          <li class="list-group-item">Suprise your Guest with Budget Friendly Meals</li>
+                          <li class="list-group-item">Daily cost of PHP 3000</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <!-- CARD TWO -->
+                  <div class="col card mx-3">
+                    <div class="meal-plan-img-box">
+                      <img class="card-img-top" src="img/everyday-meal.jpg" />
+                    </div>
+                    <div class="card-body">
+                      <h3 class="text-primary card-title ">Everyday Plan</h3>
+                      <p class="card-text">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Perfect for families</li>
+                          <li class="list-group-item">Healthy and a Balanced Diet</li>
+                          <li class="list-group-item">Weekly cost of PHP 5000</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- CARD THREE -->
+                  <div class="col card mx-3">
+                    <div class="meal-plan-img-box">
+                      <img class="card-img-top" src="img/everyday-meal.jpg" />
+                    </div>
+                    <div class="card-body">
+                      <h3 class="text-primary card-title ">Student Plan</h3>
+                      <p class="card-text">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Suitable for boarding students</li>
+                          <li class="list-group-item">Simple and Easy to Prepare</li>
+                          <li class="list-group-item">Weekly cost of PHP 1000</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+               
+              </div>
+
+
+            
+            </div>
+          <i data-previous
+            class="mx-auto position-absolute top-50 start-0 translate-middle-y h1 text-primary bi bi-arrow-left-circle"
+          ></i>
+          <i data-next
+          class="mx-auto position-absolute top-50 end-0 translate-middle-y h1 text-primary bi bi-arrow-right-circle"
+          ></i>
+            
+        
+        </div>
+
+        <!-- FORM 4 -->
+        <div class="container form-card"  data-step>
+            <div class="tab section-container bg-secondary row" id="form2">
+              <span class="col col-sm-4 number">04</span>
+              
+              <div class="col text-center">
+                <p class="h1 text-white">How many days?</p>
+                <div class="input-group input">
+                  <input
+                  type="date"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <i data-previous
+            class="mx-auto position-absolute top-50 start-0 translate-middle-y h1 text-primary bi bi-arrow-left-circle"
+          ></i>
+          <a href="menu/menu.html">
+            <i 
+            class="mx-auto position-absolute top-50 end-0 translate-middle-y h1 text-primary bi bi-arrow-right-circle"
+            ></i>
+          </a>
+              
+          
+        </div>
+        
+        
+  
+    </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
