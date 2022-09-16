@@ -1,65 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meal-Planner</title>
-    <!-- CSS only -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link  rel ="stylesheet" href="./meal-planner.styles.css">
+    <link href="../css/main.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
       rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
     />
-    <!-- sass -->
-    <link href="./css/main.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="meal-planner.styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <title>Meal Planner</title>
   </head>
   <body>
-    <h1>Meal Plan</h1>
-    <h2>Hello, Jack</h2>
-    <div class="container row gx-5 meal-grid">
-      <!-- Day 01 -->
-      <div class="container col card card-meal">
-        <h3 class="text-center">Lunch</h3>
-          <img src="../img/event-meal.jpg" class="card-img-top" />
+    <header class="container mt-5">
+      <h1 class="text-primary">Meal Planner</h1>
+      <h3 class="text-secondary">Hello Jack!</h3>
+    </header>
 
-          <div class="card-body">
-            <div class="meal-content">
-              <h3 class="card-title meal-title">
-                Chicken with Garlic &amp; Tomatoes
-              </h3>
-              <div class="meal-description">
-                <span class="meal-detail">Php 400.00</span>
-                <span class="meal-detail">Php 400.00</span>
-                <span class="meal-detail">Php 400.00</span>
+    <main class="container">
+      <div class="row">
+        <div class="col">
+          <h4 class="text-center">Lunch</h4>
+          <div class=" card meal-card">
+            <img
+            class="card-img-top" 
+            src="../img/event-meal.jpg"
+             />
+            <div class="card-body">
+              <p class="card-title fw-bold text-center">Braised Pork Chops with Vegetables</p>
+              <div class="details">
+                <span class="tags">
+                  Chicken
+                </span>
+                <span class="tags">
+                  Brocolli
+                </span>
+                <span class="price">Php 400.00</span>
               </div>
+              <div class="container-ingredients mb-5">
+                <span class="fw-bold">Ingredients:</span>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Ingredient</li>
+                  <li class="list-group-item">Ingredient</li>
+                  <li class="list-group-item">Ingredient</li>
+                </ul>
+              </div>
+              <div class="container-recipe">
+                <span class="fw-bold">Recipe</span>
+                <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque autem architecto illo magnam quasi ut repellat sunt obcaecati corporis aperiam, impedit minus a sit in, sequi culpa distinctio animi.
+              </p>
+            </div> 
             </div>
           </div>
       </div>
 
-        <div class="container col card card-meal">
-          <h3 class="text-center">Dinner</h3>
-              <img src="../img/event-meal.jpg" class="card-img-top" />
-    
-              <div class="card-body">
-                <div class="meal-description">
-                  <h3 class="card-title meal-title">
-                    Chicken with Garlic &amp; Tomatoes
-                  </h3>
-                  <span class="meal-price">Php 400.00</span>
-                </div>
-                <div class="meal-tags">
-                  <span class="tags">Chicken</span>
-                  <span class="tags">Tomatoes</span>
-                </div>
-              </div>
-            </div>
-      
-  
-
-   
+      <div class="col">
+        <div class=" card meal-card">
+          <h4>Lunch</h4>
+          <img
+          class="card-img-top" 
+          src="../img/event-meal.jpg"
+           />
+          <div class="card-body">
+            <p class="card-title text-center">Name</p>
+            <ul>
+              <li>ingredient</li>
+              <li>ingredient</li>
+              <li>ingredient</li>
+              <li>ingredient</li>
+            </ul>
+            <p>
+              Recipe
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque autem architecto illo magnam quasi ut repellat sunt obcaecati corporis aperiam, impedit minus a sit in, sequi culpa distinctio animi.
+            </p>
+          </div>
+        </div>
     </div>
+      
+      
+      
+    </div>
+    </main>
+    
+    
+    
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
