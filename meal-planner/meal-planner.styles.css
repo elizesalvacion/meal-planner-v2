@@ -1,18 +1,20 @@
 .meal-card {
   margin: 0 auto;
   padding: 0 !important;
+  padding-bottom: 0;
   overflow: hidden;
   margin-bottom: 2.4rem;
-  /* margin-left: 9.6rem; */
-  width: 30rem;
-  
-
+  width: 25rem;
 }
 
+/* .card-body {
+  padding-bottom: 0 !important;
+} */
 
-.tags{
+.tags {
   display: inline-block;
   background-color: #a3b18a;
+  color: white;
   margin: 12px;
   margin-left: 0;
   text-align: center;
@@ -22,96 +24,23 @@
   width: 5.6rem;
 }
 
-.price{
-  margin-left: 7rem;
+.price {
+  margin-left: 2.4rem;
 }
 
-/* html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+.hidden {
+  display: none;
 }
 
-body {
-  margin: 4.8rem;
-}
-
-h1 .meal-grid {
-  margin: 0 auto;
-}
-
-.meal-img {
-  width: 15%;
-}
-
-
-
-.card {
-  margin: 0 auto;
-  padding: 0 !important;
-  overflow: hidden;
-  margin-bottom: 2.4rem;
-  margin-left: 9.6rem;
-  width: 4.8rem;
-
-}
-
-
-.card-title {
-  text-align: center;
-}
-
-.meal-title {
-  padding: 1.2rem;
-  background-color: blanchedalmond;
-}
-
-.meal-content {
-  display: block;
-  padding: 1.4rem;
-  background-color: red;
-
-  text-align: center;
-
-  
-}
-
-.meal-description {
+.details-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.8rem;
-  padding: 2.4rem;
-}
-
-.meal-detail {
-  font-size: 1.8rem;
-  background-color: blue;
+  justify-content: space-between;
   padding: 1.2rem;
 }
 
-
-.meal-tags {
-  display: flex;
-  gap: 2rem;
-}
-
-.tags {
-  display: block;
+.detail {
+  border-bottom: 2px solid green;
   text-align: center;
-  font-size: 1rem;
-  background-color: seagreen;
-
   padding: 1rem;
-  width: 7rem;
-  border-radius: 75rem;
+  width: 9rem;
 }
-
-.recipe-content {
-  font-size: 1.6rem;
-
-}
-.ing-list {
-  list-style: none;
-  margin: 0;
-} */
