@@ -1,115 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html class="html">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link  rel ="stylesheet" href="./meal-planner.styles.css">
+    <link rel="stylesheet" href="./meal-planner.styles.css" />
     <link href="../css/main.min.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
     <title>Meal Planner</title>
   </head>
   <body>
     <header class="container mt-5">
+      <nav class="container">
+        <ul class="nav flex-row-reverse">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/meal-planner/meal-planner.html"
+              >Meal Planner</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu/menu.html">Try Now</a>
+          </li>
+        </ul>
+      </nav>
       <h1 class="text-primary">Meal Planner</h1>
       <h3 class="text-secondary">Hello Jack!</h3>
     </header>
 
     <main class="container">
       <div class="row">
+        <!--  -->
+
+        <!--  -->
         <div class="col">
           <h4 class="text-center">Lunch</h4>
-          <div class=" card meal-card">
-            <img
-            class="card-img-top" 
-            src="../img/event-meal.jpg"
-             />
+          <div class="card meal-card">
+            <img class="card-img-top" src="../img/event-meal.jpg" />
             <div class="card-body">
-              <p class="card-title fw-bold text-center">Braised Pork Chops with Vegetables</p>
-              <div class="details">
-                <span class="tags">
-                  Chicken
-                </span>
-                <span class="tags">
-                  Brocolli
-                </span>
+              <p class="card-title fw-bold text-center">
+                Braised Pork Chops with Vegetables
+              </p>
+              <div class="tag-list">
+                <span class="tags">Chicken</span>
+                <span class="tags">Brocolli</span>
                 <span class="price">Php 400.00</span>
               </div>
-              <div class="container-ingredients mb-5">
-                <span class="fw-bold">Ingredients:</span>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Ingredient</li>
-                  <li class="list-group-item">Ingredient</li>
-                  <li class="list-group-item">Ingredient</li>
-                </ul>
-              </div>
-              <div class="container-recipe">
-                <span class="fw-bold">Recipe</span>
-                <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque autem architecto illo magnam quasi ut repellat sunt obcaecati corporis aperiam, impedit minus a sit in, sequi culpa distinctio animi.
+
+              <p class="details-list">
+                <span
+                  class="detail"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#ingredients"
+                  aria-expanded="false">
+                  Ingredients
+                </span>
+                <span
+                  class="detail"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#recipe"
+                  aria-expanded="false">
+                  Recipes
+                </span>
               </p>
-            </div> 
+              <div class="collapse multi-collapse" id="ingredients">
+                <div class="container-ingredients card card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="collapse multi-collapse" id="recipe">
+                <div class="container-recipe card card-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus itaque autem architecto illo magnam quasi ut
+                    repellat sunt obcaecati corporis aperiam, impedit minus a
+                    sit in, sequi culpa distinctio animi.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-      </div>
+        </div>
 
-      <div class="col">
-        <div class=" card meal-card">
-          <h4>Lunch</h4>
-          <img
-          class="card-img-top" 
-          src="../img/event-meal.jpg"
-           />
-          <div class="card-body">
-            <p class="card-title text-center">Name</p>
-            <ul>
-              <li>ingredient</li>
-              <li>ingredient</li>
-              <li>ingredient</li>
-              <li>ingredient</li>
-            </ul>
-            <p>
-              Recipe
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque autem architecto illo magnam quasi ut repellat sunt obcaecati corporis aperiam, impedit minus a sit in, sequi culpa distinctio animi.
-            </p>
+        <!--  -->
+        <div class="col">
+          <h4 class="text-center">Dinner</h4>
+          <div class="card meal-card">
+            <img class="card-img-top" src="../img/everyday-meal.jpg" />
+            <div class="card-body">
+              <p class="card-title fw-bold text-center">
+                Braised Pork Chops with Vegetables
+              </p>
+              <div class="tag-list">
+                <span class="tags">Chicken</span>
+                <span class="tags">Brocolli</span>
+                <span class="price">Php 400.00</span>
+              </div>
+
+              <p class="details-list">
+                <span
+                  class="detail"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#ingredients2"
+                  aria-expanded="false">
+                  Ingredients
+                </span>
+                <span
+                  class="detail"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#recipe2"
+                  aria-expanded="false">
+                  Recipes
+                </span>
+              </p>
+              <div class="collapse multi-collapse" id="ingredients2">
+                <div class="container-ingredients card card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="collapse multi-collapse" id="recipe2">
+                <div class="container-recipe card card-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus itaque autem architecto illo magnam quasi ut
+                    repellat sunt obcaecati corporis aperiam, impedit minus a
+                    sit in, sequi culpa distinctio animi.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-    </div>
-      
-      
-      
-    </div>
+      </div>
     </main>
-    
-    
-    
 
-
-
+    <script src="meal-planer.script.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
     <script
       type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script
       nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
