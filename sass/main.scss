@@ -1,12 +1,15 @@
-$primary: #918450;
+$primary: #348f50;
 $secondary: #a3b18a;
-$headings-font-weight: 300;
+$headings-font-weight: 600;
 
-// import bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
-// import font
+$background-color: -webkit-linear-gradient(to right, #56b4d3, #348f50);
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700&display=swap");
 
+@import "../node_modules/bootstrap/scss/bootstrap";
 :root {
   --bs-body-font-family: "Nunito Sans", sans-serif;
 }
