@@ -1,3 +1,7 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
 .nav {
   justify-content: flex-end;
 }
@@ -17,14 +21,14 @@
 
 .tags {
   display: inline-block;
-  background-color: #a3b18a;
-  color: white;
+  background-color: #fde88d;
+  /* color: white !important; */
   margin: 12px;
   margin-left: 0;
   text-align: center;
 
   padding: 0.5rem;
-  border-radius: 48px;
+  border-radius: 48px !important;
   width: 5.6rem;
 }
 
@@ -47,4 +51,21 @@
   text-align: center;
   padding: 1rem;
   width: 9rem;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 4.8rem;
+}
+
+.btn-day {
+  width: 9.6rem;
+  padding: 15px;
+  /* color: white !important; */
+  /* background-color: #fde88d; */
+  border: none;
+  border-radius: 10px;
 }

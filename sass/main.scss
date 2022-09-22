@@ -1,13 +1,28 @@
-$primary: #348f50;
-$secondary: #a3b18a;
-$headings-font-weight: 600;
+$primary: #819f84;
+// $primary: rgb(255, 254, 224);
 
-$background-color: -webkit-linear-gradient(to right, #56b4d3, #348f50);
+// #411610
+// #822C1F
+// #688B6D
+// #8EA466
+// #BEB268
+// #EAC56C
+
+// #FDE88D
+// #FFCB9C
+// #FDA8A5
+// #819F84
+// #CC9266
+$secondary: #cc9266;
+$light: #fde88d;
+$headings-font-weight: 900;
 
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 :root {
