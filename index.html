@@ -7,54 +7,146 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet" /> -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
     <title>Meal Planner</title>
   </head>
-  <body class="primary-bg">
-    <header class="header">
-      <nav class="container">
+  <body class="">
+    <header class="header primary-bg">
+      <nav class="container text-white">
         <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#how">How does it work?</a>
+          <li class="nav-item  ">
+            <a class="nav-link text-white" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="meal-planner/meal-planner.html"
-              >Meal Planner</a
-            >
+            <a class="nav-link text-white" href="menu/menu.html">Menus</a>
+          </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="menu/menu.html">Menus</a>
-          </li>
+            <a class="nav-link text-white" href="meal-planner/meal-planner.html"
+              >Meal Planner</a>
         </ul>
       </nav>
     </header>
 
-    <main class="container-fluid">
-      <section class="hero" id="home">
+    <main class=" ">
+      <section class="hero mb primary-bg" id="home">
+        <h1 class="text-center mb-5">The Budget Meal Planner</h1>
         <div class="row align-items-center">
           <div class="container-fluid col">
-            <img src="img/header.jpg" class="img-fluid" />
+            <img src="img/header.jpg" class="img-fluid header-img" />
           </div>
 
           <div class="col text-center">
-            <h1 class="text-primary">Plan awesome Meals</h1>
+            <h2 class="">Plan Aawesome Meals</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut enim ad minim veniam, quis nostrud .
             </p>
-            <a href="form.html" class="btn btn-primary">Generate Meal Now</a>
+            <a href="form.html" class="btn btn-secondary text-white">Generate Meal Now</a>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="meals my-5" id="meals">
+        <div class="container mb">
+          <span class="text-uppercase">Meal Plan</span>
+          <h2 class="text-primary">Choose your main ingredient</h2>
+          <div class="row my-5">
+            <!-- events card -->
+            <div class="col card ms-5">
+              <div class="meal-plan-img-box">
+                <img class="card-img-top" src="img/event-meal.jpg" />
+              </div>
+              <div class="card-body">
+                <h3 class="text-primary card-title text-center">Chicken</h3>
+                <div class="card-text m-auto">
+                  <!-- <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <ion-icon name="gift-outline" class="me-2"></ion-icon
+                      >Preparing for Big Holidays
+                    </li>
+                    <li class="list-group-item">
+                      <i class="bi bi-piggy-bank me-2"></i>Budget friendly meals
+                      for the big event
+                    </li>
+                    <li class="list-group-item">
+                      <ion-icon name="wallet-outline" class="me-2"></ion-icon
+                      >Daily cost of PHP 3000
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- everyday plan -->
+            <div class="col card ms-5">
+              <div class="meal-plan-img-box">
+                <img class="card-img-top" src="img/everyday-meal.jpg" />
+              </div>
+              <div class="card-body">
+                <h3 class="text-primary card-title text-center">Pork</h3>
+                <div class="card-text m-auto">
+                  <!-- <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <ion-icon name="people-outline" class="me-2"></ion-icon
+                      >Perfect for families
+                    </li>
+                    <li class="list-group-item">
+                      <ion-icon name="leaf-outline" class="me-1"></ion-icon>
+                      Healthy and a Balanced Diet
+                    </li>
+                    <li class="list-group-item">
+                      <ion-icon name="wallet-outline" class="me-2"></ion-icon
+                      >Weekly cost of PHP 5000
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- student plan -->
+            <div class="col card ms-5">
+              <div class="meal-plan-img-box">
+                <img
+                  class="card-img-top img-fluid"
+                  src="img/student-meal.jpg" />
+              </div>
+              <div class="card-body">
+                <h3 class="text-primary card-title text-center">Fish</h3>
+                <div class="card-text m-auto">
+                  <!-- <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <ion-icon name="school-outline" class="me-2"></ion-icon
+                      >Suitable for students
+                    </li>
+                    <li class="list-group-item">
+                      <ion-icon name="bulb-outline" class="me-2"></ion-icon
+                      >Simple and Easy to Prepare
+                    </li>
+                    <li class="list-group-item">
+                      <ion-icon name="wallet-outline" class="me-2"></ion-icon
+                      >Weekly cost of PHP 1000
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="how" id="how">
-        <div class="container">
+        <div class="container mt-5 mb">
           <span class="text-uppercase">How it Works</span>
           <h2 class="text-primary">Create your Meal Plan in 3 simple steps</h2>
           <div class="margin">
@@ -115,97 +207,10 @@
         </div>
       </section>
 
-      <section class="meals my-5" id="meals">
+
+      <section class="form primary-bg text-white" id="form">
         <div class="container">
-          <span class="text-uppercase">Meal Plan</span>
-          <h2 class="text-primary">Choose your main ingredient</h2>
-          <div class="row my-5">
-            <!-- events card -->
-            <div class="col card ms-5">
-              <div class="meal-plan-img-box">
-                <img class="card-img-top" src="img/event-meal.jpg" />
-              </div>
-              <div class="card-body">
-                <h3 class="text-primary card-title text-center">Chicken</h3>
-                <div class="card-text m-auto">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <ion-icon name="gift-outline" class="me-2"></ion-icon
-                      >Preparing for Big Holidays
-                    </li>
-                    <li class="list-group-item">
-                      <i class="bi bi-piggy-bank me-2"></i>Budget friendly meals
-                      for the big event
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="wallet-outline" class="me-2"></ion-icon
-                      >Daily cost of PHP 3000
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- everyday plan -->
-            <div class="col card ms-5">
-              <div class="meal-plan-img-box">
-                <img class="card-img-top" src="img/everyday-meal.jpg" />
-              </div>
-              <div class="card-body">
-                <h3 class="text-primary card-title text-center">Pork</h3>
-                <div class="card-text m-auto">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <ion-icon name="people-outline" class="me-2"></ion-icon
-                      >Perfect for families
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="leaf-outline" class="me-1"></ion-icon>
-                      Healthy and a Balanced Diet
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="wallet-outline" class="me-2"></ion-icon
-                      >Weekly cost of PHP 5000
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- student plan -->
-            <div class="col card ms-5">
-              <div class="meal-plan-img-box">
-                <img
-                  class="card-img-top img-fluid"
-                  src="img/student-meal.jpg" />
-              </div>
-              <div class="card-body">
-                <h3 class="text-primary card-title text-center">Fish</h3>
-                <div class="card-text m-auto">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <ion-icon name="school-outline" class="me-2"></ion-icon
-                      >Suitable for students
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="bulb-outline" class="me-2"></ion-icon
-                      >Simple and Easy to Prepare
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="wallet-outline" class="me-2"></ion-icon
-                      >Weekly cost of PHP 1000
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="form" id="form">
-        <div class="container">
-          <h2 class="text-primary">Try now</h2>
+          <h2 class="text-white">Try now</h2>
           <div class="">
             <form class="my-5" name="sign-up">
               <div class="row">
@@ -251,7 +256,7 @@
 
                 <div class="col">
                   <button
-                    class="btn btn-form form-control btn-primary text-white">
+                    class="btn btn-form form-control btn-secondary text-white">
                     Sign-up Now
                   </button>
                 </div>
