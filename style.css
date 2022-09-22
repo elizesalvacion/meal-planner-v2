@@ -1,5 +1,15 @@
 * {
-  /* background-color: #588157; */
+  font-family: "Quicksand", sans-serif;
+}
+.primary-bg {
+  /* background-color: #f6e7a6; */
+  background-color: #819f84;
+
+  /* color: white; */
+}
+
+.mb {
+  margin-bottom: 9.6rem !important;
 }
 
 .nav {
@@ -7,8 +17,17 @@
   margin: 0;
   /* background-color: red; */
 }
+.nav-item {
+  color: white;
+}
 
 /*HEADER*/
+.header {
+  color: white;
+}
+.header-img {
+  border-radius: 10px;
+}
 
 /*HERO-SECTIOn*/
 .hero-btn {
@@ -18,14 +37,16 @@
   font-size: 1.8rem;
 }
 .hero {
-  margin: 4.8rem;
+  padding: 4.8rem;
+  color: white;
   /* margin-top:2rem; */
 }
 
 /*HOW-TO-SECTION*/
+
 .how-img {
   max-width: 75%;
-  box-shadow: 0 2rem 2rem #5881573b;
+  box-shadow: -12px 15px 15px #cc9266;
 }
 .how-container {
   margin-top: 4.8rem !important;
@@ -42,7 +63,7 @@
   overflow: hidden;
   transition: all 0.4s;
 
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1); */
 }
 .card-text {
   padding: 1rem;
@@ -50,7 +71,7 @@
 
 .card:hover {
   transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(19, 73, 33, 0.247);
+  box-shadow: 0 3.2rem 6.4rem #cc92666b;
 }
 
 /*CTA-SECTION*/
@@ -91,6 +112,11 @@
   padding-right: 2.4rem;
 }
 
+/* FORM-FOOTER */
+.form {
+  padding: 4.8rem;
+  /* color: white; */
+}
 /* FORMS */
 .form-card {
   /* display: none; */
