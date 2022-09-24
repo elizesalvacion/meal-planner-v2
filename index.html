@@ -8,12 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
-      rel="stylesheet" /> -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
@@ -22,24 +19,26 @@
   </head>
   <body class="">
     <header class="header primary-bg">
-      <nav class="container text-white">
-        <ul class="nav justify-content-center">
-          <li class="nav-item  ">
+      <img src="./img/logo-2.png" class="logo" />
+      <nav class="nav-bar text-white">
+        <ul class="nav">
+          <li class="nav-item">
             <a class="nav-link text-white" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="menu/menu.html">Menus</a>
           </li>
-          </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="meal-planner/meal-planner.html"
-              >Meal Planner</a>
+              >Meal Planner</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <main class=" ">
-      <section class="hero mb primary-bg" id="home">
+      <section class="hero primary-bg" id="home">
         <h1 class="text-center mb-5">The Budget Meal Planner</h1>
         <div class="row align-items-center">
           <div class="container-fluid col">
@@ -52,19 +51,20 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut enim ad minim veniam, quis nostrud .
             </p>
-            <a href="form.html" class="btn btn-secondary text-white">Generate Meal Now</a>
+            <a href="./form/form.html" class="btn btn-secondary text-white"
+              >Generate Meal Now</a
+            >
           </div>
         </div>
       </section>
 
-      
-      <section class="meals my-5" id="meals">
-        <div class="container mb">
+      <section class="meals secondary-bg" id="meals">
+        <div class="container">
           <span class="text-uppercase">Meal Plan</span>
           <h2 class="text-primary">Choose your main ingredient</h2>
           <div class="row my-5">
             <!-- events card -->
-            <div class="col card ms-5">
+            <div class="col card">
               <div class="meal-plan-img-box">
                 <img class="card-img-top" src="img/event-meal.jpg" />
               </div>
@@ -147,7 +147,7 @@
       </section>
 
       <section class="how" id="how">
-        <div class="container mt-5 mb">
+        <div class="container">
           <span class="text-uppercase">How it Works</span>
           <h2 class="text-primary">Create your Meal Plan in 3 simple steps</h2>
           <div class="margin">
@@ -155,7 +155,7 @@
 
             <div class="row align-items-center how-container">
               <div class="col text-center img-container">
-                <img class="how-img rounded" src="img/mock-up-sm.jpg" />
+                <img class="how-img rounded" src="img/diet.svg" />
               </div>
 
               <div class="how-description col">
@@ -183,14 +183,14 @@
                 </p>
               </div>
               <div class="col text-center">
-                <img class="how-img rounded" src="img/mock-up-sm.jpg" />
+                <img class="how-img rounded" src="img/breakfast.svg" />
               </div>
             </div>
 
             <!--STEP THREE  -->
             <div class="row align-items-center how-container">
               <div class="col text-center">
-                <img class="how-img rounded" src="img/mock-up-sm.jpg" />
+                <img class="how-img rounded" src="img/tasting.svg" />
               </div>
 
               <div class="how-description col">
@@ -207,7 +207,6 @@
           </div>
         </div>
       </section>
-
 
       <section class="form primary-bg text-white" id="form">
         <div class="container">
