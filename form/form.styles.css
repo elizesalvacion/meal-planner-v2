@@ -1,0 +1,82 @@
+.form-card {
+  /* display: none; */
+  animation: fade 250ms ease-in-out forwards;
+}
+
+.form-card.active {
+  animation: slide 250ms 125ms ease-in-out both;
+}
+
+.multi-step-form {
+  overflow: hidden;
+  position: relative;
+}
+
+/* ANIMATION */
+.hide {
+  display: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.75);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+/* FORM 2 */
+
+.card-container {
+  margin: 2.4rem;
+  padding: 2.4rem;
+}
+
+.row:last-child {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.card:first-child {
+  margin-left: 0 !important;
+}
+.card-details {
+  margin-bottom: 4.8rem;
+  margin-top: 2.4rem;
+  padding: 1.8rem;
+}
+
+.list-item {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.op {
+  opacity: 50%;
+}
+
+.svg {
+  width: 40rem;
+  height: 40rem;
+}

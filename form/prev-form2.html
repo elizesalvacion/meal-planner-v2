@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Meal Plan</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/css/main.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    /> -->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how">How does it work?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#meals">Meal Plans</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#form">Try Now</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row m-auto">
+          <!-- DAY ONE -->
+          <div class="col card card-container">
+            <div data-bs-toggle="modal" data-bs-target="#meal1">
+              <img src="img/event-meal.jpg" class="img-fluid" />
+              <div class="text-center card-details">
+                <p class="h4 card-title mb-3">06</p>
+                <p class="h3 text-primary">MONDAY</p>
+              </div>
+            </div>
+          </div>
+          <!-- DAY TWO -->
+          <div class="col card card-container">
+            <div data-bs-toggle="modal" data-bs-target="#meal2">
+              <img src="img/adobo.jpg" class="img-fluid" />
+              <div class="text-center card-details">
+                <p class="h4 card-title mb-3">07</p>
+                <p class="h3 text-primary">TUESDAY</p>
+              </div>
+            </div>
+          </div>
+          <!-- DAY THREE -->
+          <div class="col card card-container">
+            <div data-bs-toggle="modal" data-bs-target="#meal3">
+              <img src="img/student-meal.jpg" class="img-fluid" />
+              <div class="text-center card-details">
+                <p class="h4 card-title mb-3">08</p>
+                <p class="h3 text-primary">WEDNESDAY</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal one -->
+          <div
+            class="modal fade"
+            id="meal1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    June 6, 2022 - Monday
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <h2 class="col">Sinigang</h2>
+                    <span class="col text-center op mt-2">Servings: 4 </span>
+                  </div>
+                  <img src="img/everyday-meal.jpg" class="img-fluid" />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-item h3 mt-5">Ingredients:</li>
+                    <li class="list-item">1 tablespoon vegetable oil</li>
+                    <li class="list-item">1 small onion, chopped</li>
+                    <li class="list-item">1 teaspoon salt</li>
+                    <li class="list-item">
+                      1 (1/2 inch) piece fresh ginger, chopped
+                    </li>
+                    <li class="list-item">
+                      2 plum tomatoes, cut into 1/2-inch dice
+                    </li>
+                    <li class="list-item">1 pound bone-in pork chops</li>
+                    <li class="list-item">4 cups water, more if needed</li>
+                    <li class="list-item">
+                      1 (1.41 ounce) package tamarind soup base (such as Knorr®)
+                    </li>
+                    <li class="list-item">
+                      ½ pound fresh green beans, trimmed
+                    </li>
+                  </ul>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-item h3 mt-3">Directions:</li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon>
+                      <strong>Step 1</strong>
+                      <p>
+                        Heat vegetable oil in a skillet over medium heat. Add
+                        onion; cook and stir until softened and translucent,
+                        about 5 minutes. Season with salt.
+                      </p>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon
+                      ><strong>Step 2</strong>
+                      <p>
+                        Stir in ginger, tomatoes, and pork chops. Cover and
+                        reduce heat to medium-low. Turn the pork occasionally,
+                        until browned.
+                      </p>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon
+                      ><strong>Step 3</strong>
+                      <p>
+                        Pour in water and tamarind soup base. Bring to a boil,
+                        then reduce heat and simmer until the pork is tender and
+                        cooked through, about 30 minutes.
+                      </p>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon
+                      ><strong>Step 4</strong>
+                      <p>Stir in green beans and cook until tender.</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary btn-save">
+                    Print Recipe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL two -->
+          <div
+            class="modal fade"
+            id="meal2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    June 7, 2022 - Tuesday
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <h2 class="col">Adobo</h2>
+                    <span class="col text-center op mt-2">Servings: 4 </span>
+                  </div>
+                  <img src="img/adobo.jpg" class="img-fluid" />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-item h3 mt-5">Ingredients:</li>
+                    <li class="list-item">2 tablespoons vegetable oil</li>
+                    <li class="list-item">
+                      1 (3 pound) chicken, cut into pieces
+                    </li>
+                    <li class="list-item">
+                      1 large onion, quartered and sliced
+                    </li>
+                    <li class="list-item">2 tablespoons minced garlic</li>
+                    <li class="list-item">⅔ cup low sodium soy sauce</li>
+                    <li class="list-item">⅓ cup white vinegar</li>
+                    <li class="list-item">1 tablespoon garlic powder</li>
+                    <li class="list-item">2 teaspoons black pepper</li>
+                    <li class="list-item">1 bay leaf</li>
+                  </ul>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-item h3 mt-3">Directions:</li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon>
+                      <strong>Step 1</strong>
+                      <p>
+                        Heat vegetable oil in a large skillet over medium-high
+                        heat. Cook chicken pieces until golden brown, 2 to 3
+                        minutes per side. Transfer chicken to a plate and set
+                        aside.
+                      </p>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon
+                      ><strong>Step 2</strong>
+                      <p>
+                        Add onion and garlic to the skillet; cook until softened
+                        and brown, about 6 minutes. Pour in soy sauce and
+                        vinegar and season with garlic powder, black pepper, and
+                        bay leaf.
+                      </p>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon
+                      ><strong>Step 3</strong>
+                      <p>
+                        Return chicken to pan, increase heat to high, and bring
+                        to a boil. Reduce heat to medium-low, cover, and simmer
+                        until chicken is tender and cooked through, 35 to 40
+                        minutes.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary btn-save">
+                    Print Recipe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL three -->
+          <div
+            class="modal fade"
+            id="meal3"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    June 8, 2022 - Wednesday
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <h2 class="col">Pinakbet</h2>
+                    <span class="col text-center op mt-2">Servings: 4 </span>
+                  </div>
+                  <img src="img/student-meal.jpg" class="img-fluid" />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-item h3 mt-5">Ingredients:</li>
+                    <li class="list-item">3 tablespoons olive oil</li>
+                    <li class="list-item">1 onion, chopped</li>
+                    <li class="list-item">2 cloves garlic, minced</li>
+                    <li class="list-item">½ pound pork loin, chopped</li>
+                    <li class="list-item">
+                      ½ pound peeled and deveined prawns
+                    </li>
+                    <li class="list-item">salt and pepper to taste</li>
+                    <li class="list-item">
+                      ¼ pound zucchini, seeded and cut into bite-size pieces
+                    </li>
+                    <li class="list-item">¼ pound fresh okra, ends trimmed</li>
+                    <li class="list-item">
+                      ¼ pound fresh green beans, trimmed
+                    </li>
+                    <li class="list-item">
+                      ¼ pound eggplant, cut into bite-size pieces
+                    </li>
+                    <li class="list-item">
+                      1 small bitter melon, cut into bite-size pieces
+                    </li>
+                  </ul>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-item h3 mt-3">Directions:</li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon>
+                      <strong>Step 1</strong>
+                      <p>
+                        Heat oil in a large pot over medium heat; stir in onion
+                        and garlic and cook until tender, about 5 minutes.
+                      </p>
+                    </li>
+
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon
+                      ><strong>Step 2</strong>
+                      <p>
+                        Add pork; cook and stir until browned, 5 to 7 minutes.
+                      </p>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon
+                      ><strong>Step 3</strong>
+                      <p>
+                        Add prawns; cook and stir until they turn pink, about 5
+                        minutes.
+                      </p>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon
+                      ><strong>Step 4</strong>
+                      <p>
+                        Stir in tomato; season with salt and pepper, cover and
+                        simmer for 5 minutes.
+                      </p>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon name="checkbox-outline" class="me-2"></ion-icon
+                      ><strong>Step 5</strong>
+                      <p>
+                        Stir in zucchini, okra, green beans, eggplant, and
+                        bitter melon; cover and cook until the vegetables are
+                        tender, about 10 minutes.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary btn-save">
+                    Print Recipe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAVE BUTTON -->
+          <div class="mb-5 text-center" id="save">
+            <button class="btn btn-primary text-white">Save Meal Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script-form-2.js"></script>
+  </body>
+</html>

@@ -1,20 +1,19 @@
 * {
   font-family: "Quicksand", sans-serif;
 }
+
 .primary-bg {
   /* background-color: #f6e7a6; */
   background-color: #819f84;
-
-  /* color: white; */
 }
 
-.mb {
-  margin-bottom: 9.6rem !important;
+.secondary-bg {
+  background-color: #fde88d;
 }
 
 .nav {
-  padding: 1rem;
-  margin: 0;
+  justify-content: center;
+
   /* background-color: red; */
 }
 .nav-item {
@@ -23,30 +22,43 @@
 
 /*HEADER*/
 .header {
+  padding-top: 2.4rem;
+  padding-bottom: 2.8rem;
   color: white;
 }
 .header-img {
   border-radius: 10px;
 }
 
+.logo {
+  width: 7rem;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
 /*HERO-SECTIOn*/
+.hero {
+  padding: 4.8rem;
+  padding-top: 0;
+  color: white;
+  /* margin-top:2rem; */
+}
 .hero-btn {
   margin: 0;
   position: absolute;
   transform: translate(-50%, 80%);
   font-size: 1.8rem;
 }
-.hero {
-  padding: 4.8rem;
-  color: white;
-  /* margin-top:2rem; */
-}
 
 /*HOW-TO-SECTION*/
+.how {
+  padding: 9.6rem 4.8rem;
+}
 
 .how-img {
   max-width: 75%;
-  box-shadow: -12px 15px 15px #cc9266;
+  /* box-shadow: -12px 15px 15px #cc9266; */
 }
 .how-container {
   margin-top: 4.8rem !important;
@@ -58,6 +70,17 @@
 } */
 
 /* MEAL-SECTION */
+.meals {
+  padding: 9.6rem 4.8rem;
+  /* padding-top: 9.6rem; */
+
+  margin: 0 auto;
+}
+
+.meal {
+  padding: 4.8rem;
+}
+
 .card {
   padding: 0 !important;
   overflow: hidden;
@@ -114,84 +137,9 @@
 
 /* FORM-FOOTER */
 .form {
-  padding: 4.8rem;
+  padding: 9.6rem 4.8rem;
   /* color: white; */
 }
 /* FORMS */
-.form-card {
-  /* display: none; */
-  animation: fade 250ms ease-in-out forwards;
-}
 
-.form-card.active {
-  animation: slide 250ms 125ms ease-in-out both;
-}
-
-.multi-step-form {
-  overflow: hidden;
-  position: relative;
-}
-
-/* ANIMATION */
-.hide {
-  display: none;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(200%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(0.75);
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-    transform: scale(0);
-  }
-}
-
-/* FORM 2 */
-
-.card-container {
-  margin: 2.4rem;
-  padding: 2.4rem;
-}
-
-.row:last-child {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}
-
-.card:first-child {
-  margin-left: 0 !important;
-}
-.card-details {
-  margin-bottom: 4.8rem;
-  margin-top: 2.4rem;
-  padding: 1.8rem;
-}
-
-.list-item {
-  list-style: none;
-  margin-bottom: 0.5rem;
-}
-
-.op {
-  opacity: 50%;
-}
+/* GENERAL HELPER CSS */
