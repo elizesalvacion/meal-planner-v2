@@ -15,6 +15,18 @@
   width: 25rem;
 }
 
+.operations__content {
+  display: none;
+}
+
+/* .operations__content--active {
+  display: grid;
+} */
+
+.active {
+  display: grid;
+}
+
 /* .card-body {
   padding-bottom: 0 !important;
 } */

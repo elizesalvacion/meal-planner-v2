@@ -22,3 +22,41 @@
 //   containerRecipe.classList.add("hidden");
 //   containerIngredients.classList.remove("hidden");
 // });
+const tabs = document.querySelectorAll(".operations__tab");
+const tab = document.querySelectorAll(".tab");
+
+const tabsContainer = document.querySelectorAll(".operations__tab-container");
+const tabsContent = document.querySelectorAll(".operations__content");
+
+const tabsContainerMain = document.querySelectorAll(".tab-container-main");
+
+console.log(tabsContainerMain);
+
+// tabsContainerMain.forEach((t) =>
+
+// );
+
+tabsContainer.forEach((t) =>
+  t.addEventListener("click", function (e) {
+    const clicked = e.target.closest(".operations__tab");
+    //guard clause
+    if (!clicked) return;
+
+    //remove active classes for both tab and content
+    tabs.forEach((t) => {
+      t.classList.remove("active");
+    });
+
+    tabsContent.forEach((c) => {
+      c.classList.remove(`active`);
+    });
+
+    //active tab
+    clicked.classList.add("active");
+
+    //active content area
+    document
+      .querySelector(`.operations__content--${clicked.dataset.tab}`)
+      .classList.add("active");
+  })
+);

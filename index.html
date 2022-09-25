@@ -18,22 +18,63 @@
     <title>Meal Planner</title>
   </head>
   <body class="">
-    <header class="header primary-bg">
-      <img src="./img/logo-2.png" class="logo" />
-      <nav class="nav-bar text-white">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="menu/menu.html">Menus</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="meal-planner/meal-planner.html"
-              >Meal Planner</a
-            >
-          </li>
-        </ul>
+    <header class="header primary-bg container-fluid text-center">
+      <!-- <nav class="navbar-brand navbar-collapse text-white">
+        <div class="container-fluid">
+          <div class="container-fluid">
+            <img src="./img/logo-2.png" class="logo img-fluid navbar-brand" />
+          </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="menu/menu.html">Menus</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="meal-planner/meal-planner.html"
+                >Meal Planner</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="align-text-top navbar-brand" href="index.html">
+            <img src="./img/logo-2.png" width="100" height="100" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./menu/menu.html">Menus</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  href="./meal-planner/meal-planner.html"
+                  >Meal Planner</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -41,107 +82,21 @@
       <section class="hero primary-bg" id="home">
         <h1 class="text-center mb-5">The Budget Meal Planner</h1>
         <div class="row align-items-center">
-          <div class="container-fluid col">
-            <img src="img/header.jpg" class="img-fluid header-img" />
+          <div class="container col-md">
+            <img src="img/header.jpg" class="img-fluid header-img mb-5" />
           </div>
 
           <div class="col text-center">
-            <h2 class="">Plan Aawesome Meals</h2>
+            <h2 class="">Plan Awesome Meals</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut enim ad minim veniam, quis nostrud .
+              If you think your life would be better if you knew exactly what to
+              cook every day, we think so too. We're building a web app that
+              will allow you to cook a meal in the fastest, easiest, and most
+              cost-effective way possible.
             </p>
-            <a href="./form/form.html" class="btn btn-secondary text-white"
+            <a href="#form" class="btn btn-secondary text-white"
               >Generate Meal Now</a
             >
-          </div>
-        </div>
-      </section>
-
-      <section class="meals secondary-bg" id="meals">
-        <div class="container">
-          <span class="text-uppercase">Meal Plan</span>
-          <h2 class="text-primary">Choose your main ingredient</h2>
-          <div class="row my-5">
-            <!-- events card -->
-            <div class="col card">
-              <div class="meal-plan-img-box">
-                <img class="card-img-top" src="img/event-meal.jpg" />
-              </div>
-              <div class="card-body">
-                <h3 class="text-primary card-title text-center">Chicken</h3>
-                <div class="card-text m-auto">
-                  <!-- <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <ion-icon name="gift-outline" class="me-2"></ion-icon
-                      >Preparing for Big Holidays
-                    </li>
-                    <li class="list-group-item">
-                      <i class="bi bi-piggy-bank me-2"></i>Budget friendly meals
-                      for the big event
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="wallet-outline" class="me-2"></ion-icon
-                      >Daily cost of PHP 3000
-                    </li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- everyday plan -->
-            <div class="col card ms-5">
-              <div class="meal-plan-img-box">
-                <img class="card-img-top" src="img/everyday-meal.jpg" />
-              </div>
-              <div class="card-body">
-                <h3 class="text-primary card-title text-center">Pork</h3>
-                <div class="card-text m-auto">
-                  <!-- <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <ion-icon name="people-outline" class="me-2"></ion-icon
-                      >Perfect for families
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="leaf-outline" class="me-1"></ion-icon>
-                      Healthy and a Balanced Diet
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="wallet-outline" class="me-2"></ion-icon
-                      >Weekly cost of PHP 5000
-                    </li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- student plan -->
-            <div class="col card ms-5">
-              <div class="meal-plan-img-box">
-                <img
-                  class="card-img-top img-fluid"
-                  src="img/student-meal.jpg" />
-              </div>
-              <div class="card-body">
-                <h3 class="text-primary card-title text-center">Fish</h3>
-                <div class="card-text m-auto">
-                  <!-- <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <ion-icon name="school-outline" class="me-2"></ion-icon
-                      >Suitable for students
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="bulb-outline" class="me-2"></ion-icon
-                      >Simple and Easy to Prepare
-                    </li>
-                    <li class="list-group-item">
-                      <ion-icon name="wallet-outline" class="me-2"></ion-icon
-                      >Weekly cost of PHP 1000
-                    </li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -153,114 +108,192 @@
           <div class="margin">
             <!-- STEP ONE -->
 
-            <div class="row align-items-center how-container">
-              <div class="col text-center img-container">
-                <img class="how-img rounded" src="img/diet.svg" />
+            <div class="row align-items-center container-fluid how-container">
+              <div class="col-md text-center img-container">
+                <img class="how-img img-fluid mb-2" src="img/diet.svg" />
               </div>
 
-              <div class="how-description col">
+              <div class="col">
                 <h3 class="display-4 text-secondary">01</h3>
                 <h3 class="h3 text-primary">Fill up the form</h3>
                 <p class="m-auto p-auto">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Dicta facere fugiat nostrum molestias, quisquam at cum quidem
-                  tenetur recusandae ea, neque iure sapiente officia, quasi
-                  iusto consequuntur quod explicabo eum?
+                  First you have to input your name. Then add how many people
+                  and for how many days. Lastly state how much is your budget
+                  range
                 </p>
               </div>
-            </div>
 
-            <!-- STEP TWO -->
-            <div class="row align-items-center how-container">
-              <div class="how-description col">
-                <h3 class="display-4 text-secondary">02</h3>
-                <h3 class="h3 text-primary">Check out the suggested Meals</h3>
-                <p class="m-auto p-auto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                  non rem molestias maiores, asperiores vero? Dolore officiis
-                  voluptates laboriosam dolores quibusdam voluptatem quae
-                  accusantium, recusandae minus officia distinctio dicta nulla!
-                </p>
+              <!-- STEP TWO -->
+              <div class="row align-items-center how-container">
+                <div class="col order-2 order-md-2">
+                  <h3 class="display-4 text-secondary">02</h3>
+                  <h3 class="h3 text-primary">Check out the suggested Meals</h3>
+                  <p class="m-auto p-auto">
+                    Planning meals have never been easier with this web app. You
+                    get the final say to what you want to be added to your meal
+                    planner.
+                  </p>
+                </div>
+                <div class="col-md text-center order-1 order-md-2">
+                  <img class="how-img img-fluid mb-2" src="img/breakfast.svg" />
+                </div>
               </div>
-              <div class="col text-center">
-                <img class="how-img rounded" src="img/breakfast.svg" />
-              </div>
-            </div>
+              <!--STEP THREE  -->
+              <div class="row align-items-center how-container">
+                <div class="col-md text-center">
+                  <img class="how-img img-fluid mb-5" src="img/tasting.svg" />
+                </div>
 
-            <!--STEP THREE  -->
-            <div class="row align-items-center how-container">
-              <div class="col text-center">
-                <img class="how-img rounded" src="img/tasting.svg" />
-              </div>
-
-              <div class="how-description col">
-                <h3 class="display-4 text-secondary">03</h3>
-                <h3 class="h3 text-primary">Edit and Save your meal plan</h3>
-                <p class="m-auto p-auto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  dicta, numquam quia minima debitis amet a magnam commodi
-                  cumque tempora nostrum, libero aliquid eligendi eos doloribus
-                  deserunt voluptatem quos illum.
-                </p>
+                <div class="how-description col">
+                  <h3 class="display-4 text-secondary">03</h3>
+                  <h3 class="h3 text-primary">Edit and Save your meal plan</h3>
+                  <p class="m-auto p-auto">
+                    Don't lose the planner. After finalizing every meal, you can
+                    either save your plan by downloading it in a pdf format, or
+                    have it sent to you by email.
+                  </p>
+                </div>
               </div>
             </div>
+            <!-- End of Steps -->
           </div>
         </div>
       </section>
 
       <section class="form primary-bg text-white" id="form">
         <div class="container">
-          <h2 class="text-white">Try now</h2>
-          <div class="">
-            <form class="my-5" name="sign-up">
+          <h2 class="text-white">Fill up the following</h2>
+          <div class="container-fluid">
+            <form class="my-5" name="">
               <div class="row">
-                <div class="col mb-5">
-                  <label for="full-name">Full Name</label>
+                <div class="mb-2 col-sm-6">
+                  <label for="q-3" class="form-label"> First Name</label>
                   <input
-                    id="full-name"
-                    type="text"
-                    placeholder="John Smith"
-                    name="full-name"
-                    required
-                    class="form-control" />
+                    type="string"
+                    class="form-control"
+                    id="q-3"
+                    placeholder="First Name" />
                 </div>
-
-                <div class="col mb-5">
-                  <label for="email">Email Address</label>
+                <div class="mb-2 col-sm-6">
+                  <label for="q-3" class="form-label"> Last Name</label>
                   <input
-                    id="email"
-                    type="email"
-                    placeholder="me@example.com"
-                    name="email"
-                    required
-                    class="form-control" />
+                    type="string"
+                    class="form-control"
+                    id="q-3"
+                    placeholder="Last Name" />
                 </div>
               </div>
 
               <div class="row">
-                <div class="col mb-5">
-                  <label for="select-where">Where did you hear from us?</label>
-                  <select
-                    id="select-where"
-                    name="select-where"
-                    required
-                    class="form-control">
-                    <option value="">Please choose one option</option>
-                    <option value="friends">Friends and family</option>
-                    <option value="youtube">Youtube video</option>
-                    <option value="podcast">Podcast</option>
-                    <option value="ad">Facebook ad</option>
-                    <option value="others">Others</option>
+                <div class="mb-2 col-sm-6">
+                  <label for="q-1" class="form-label">
+                    For how many days?</label
+                  >
+                  <select class="form-select" id="">
+                    <option selected>Choose...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
                   </select>
+                </div>
+                <div class="mb-2 col">
+                  <label for="q-2" class="form-label"> How many people?</label>
+                  <select class="form-select" id="">
+                    <option selected>Choose...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-2 row">
+                <div class="col">
+                  <div class="card" style="width: 18rem">
+                    <img class="card-img-top" src="img/everyday-meal.jpg" />
+                    <div class="card-body">
+                      <p class="card-text">Chicken</p>
+                      <div class="text-center">
+                        <input
+                          type="checkbox"
+                          class="btn-check"
+                          id="btn-check-1"
+                          autocomplete="off" />
+                        <label class="btn btn-primary" for="btn-check-1"
+                          >Select</label
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="col">
-                  <button
-                    class="btn btn-form form-control btn-secondary text-white">
-                    Sign-up Now
-                  </button>
+                  <div class="card" style="width: 18rem">
+                    <img class="card-img-top" src="img/everyday-meal.jpg" />
+                    <div class="card-body">
+                      <p class="card-text">Pork</p>
+                      <div class="text-center">
+                        <input
+                          type="checkbox"
+                          class="btn-check"
+                          id="btn-check-2"
+                          autocomplete="off" />
+                        <label class="btn btn-primary" for="btn-check-2"
+                          >Select</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card" style="width: 18rem">
+                    <img class="card-img-top" src="img/everyday-meal.jpg" />
+                    <div class="card-body">
+                      <p class="card-text">Fish</p>
+                      <div class="text-center">
+                        <input
+                          type="checkbox"
+                          class="btn-check"
+                          id="btn-check-3"
+                          autocomplete="off" />
+                        <label class="btn btn-primary" for="btn-check-3"
+                          >Select</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card" style="width: 18rem">
+                    <img class="card-img-top" src="img/everyday-meal.jpg" />
+                    <div class="card-body">
+                      <p class="card-text">Beef</p>
+                      <div class="text-center">
+                        <input
+                          type="checkbox"
+                          class="btn-check"
+                          id="btn-check-3"
+                          autocomplete="off" />
+                        <label class="btn btn-primary" for="btn-check-3"
+                          >Select</label
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <button type="submit" class="btn btn-secondary">Submit</button>
             </form>
           </div>
         </div>

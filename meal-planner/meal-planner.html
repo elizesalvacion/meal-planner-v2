@@ -31,12 +31,12 @@
             <a class="nav-link" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="../menu/menu.html">Menus</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/meal-planner/meal-planner.html"
               >Meal Planner</a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../menu/menu.html">Check our Menus</a>
           </li>
         </ul>
       </nav>
@@ -46,15 +46,9 @@
 
     <main class="container">
       <div class="row">
+        <h3 class="text-center mb-5">Choose from the following selections</h3>
         <!--  -->
-
-        <!--  -->
-        <div class="col days">
-          <button class="btn-day btn btn-light">01 Monday</button>
-          <button class="btn-day btn btn-light">02 Tueday</button>
-          <button class="btn-day btn btn-light">03 Wednesday</button>
-        </div>
-        <div class="col">
+        <div class="col-5">
           <h4 class="text-center">Lunch</h4>
           <div class="card meal-card">
             <img class="card-img-top" src="../img/event-meal.jpg" />
@@ -68,38 +62,102 @@
                 <span class="price">Php 400.00</span>
               </div>
 
-              <p class="details-list">
-                <span
-                  class="detail"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#ingredients"
-                  aria-expanded="false">
-                  Ingredients
-                </span>
-                <span
-                  class="detail"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#recipe"
-                  aria-expanded="false">
-                  Recipes
-                </span>
+              <div class="tab-container-main">
+                <div class="operations__tab-container">
+                  <p class="details-list">
+                    <button
+                      class="btn operations__tab operations__tab--1 active"
+                      data-tab="1">
+                      Ingredients
+                    </button>
+                    <button
+                      class="btn operations__tab operations__tab--2"
+                      data-tab="2">
+                      How to Cook
+                    </button>
+                  </p>
+                </div>
+
+                <div class="operations__content operations__content--1 active">
+                  <div class="container-ingredients card card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Ingredient 1</li>
+                      <li class="list-group-item">Ingredient 2</li>
+                      <li class="list-group-item">Ingredient 3</li>
+                      <li class="list-group-item">Ingredient 4</li>
+                      <li class="list-group-item">Ingredient 5</li>
+                      <li class="list-group-item">Ingredient 6</li>
+                      <li class="list-group-item">Ingredient 7</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div
+                  class="operations__content operations__content--2 tab tab--2">
+                  <div class="container-recipe card card-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Possimus itaque autem architecto illo magnam quasi ut
+                      repellat sunt obcaecati corporis aperiam, impedit minus a
+                      sit in, sequi culpa distinctio animi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="col-4">
+          <h4 class="text-center">Dinner</h4>
+          <div class="card meal-card">
+            <img class="card-img-top" src="../img/event-meal.jpg" />
+            <div class="card-body">
+              <p class="card-title fw-bold text-center">
+                Braised Pork Chops with Vegetables
               </p>
-              <div class="collapse multi-collapse" id="ingredients">
+              <div class="tag-list">
+                <span class="tags btn btn-primary">Chicken</span>
+                <span class="tags btn btn-primary">Brocolli</span>
+                <span class="price">Php 400.00</span>
+              </div>
+
+              <div class="tab-container-main">
+                <div class="operations__tab-container">
+                  <p class="details-list">
+                    <button
+                      class="btn operations__tab operations__tab--3 active"
+                      data-tab="3">
+                      Ingredients
+                    </button>
+                    <button
+                      class="btn operations__tab operations__tab--4"
+                      data-tab="4">
+                      How to Cook
+                    </button>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="operations__content operations__content--3 active"
+                id="ingredients">
                 <div class="container-ingredients card card-body">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
+                    <li class="list-group-item">Ingredient 1</li>
+                    <li class="list-group-item">Ingredient 2</li>
+                    <li class="list-group-item">Ingredient 3</li>
+                    <li class="list-group-item">Ingredient 4</li>
+                    <li class="list-group-item">Ingredient 5</li>
+                    <li class="list-group-item">Ingredient 6</li>
+                    <li class="list-group-item">Ingredient 7</li>
                   </ul>
                 </div>
               </div>
-              <div class="collapse multi-collapse" id="recipe">
+
+              <div class="operations__content operations__content--4">
                 <div class="container-recipe card card-body">
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -112,65 +170,42 @@
             </div>
           </div>
         </div>
+        <!-- END -->
 
-        <!--  -->
-        <div class="col">
-          <h4 class="text-center">Dinner</h4>
-          <div class="card meal-card">
-            <img class="card-img-top" src="../img/everyday-meal.jpg" />
-            <div class="card-body">
-              <p class="card-title fw-bold text-center">
-                Braised Pork Chops with Vegetables
-              </p>
-              <div class="tag-list">
-                <span class="tags btn btn-primary">Chicken</span>
-                <span class="tags btn btn-primary">Brocolli</span>
-                <span class="price">Php 400.00</span>
-              </div>
-
-              <p class="details-list">
-                <span
-                  class="detail"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#ingredients2"
-                  aria-expanded="false">
-                  Ingredients
-                </span>
-                <span
-                  class="detail"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#recipe2"
-                  aria-expanded="false">
-                  Recipes
-                </span>
-              </p>
-              <div class="collapse multi-collapse" id="ingredients2">
-                <div class="container-ingredients card card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                    <li class="list-group-item">Ingredient</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="collapse multi-collapse" id="recipe2">
-                <div class="container-recipe card card-body">
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus itaque autem architecto illo magnam quasi ut
-                    repellat sunt obcaecati corporis aperiam, impedit minus a
-                    sit in, sequi culpa distinctio animi.
-                  </p>
-                </div>
-              </div>
+        <div class="col-3">
+          <h5 class="text-center mb-5">Total Budget</h5>
+          <!--  -->
+          <div class="row">
+            <div class="col">
+              <p class="text-center">Name of food</p>
+            </div>
+            <div class="col">
+              <p class="text-center">Amount</p>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col">
+              <p class="text-center">Name of food</p>
+            </div>
+            <div class="col">
+              <p class="text-center">Amount</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p class="text-center">Name of food</p>
+            </div>
+            <div class="col">
+              <p class="text-center">Amount</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <span class="text-center"><strong>Total</strong></span>
+          </div>
+          <!-- END -->
         </div>
       </div>
     </main>

@@ -1,5 +1,9 @@
-.form-card {
-  /* display: none; */
+.container-form {
+  padding-top: 4.8rem;
+  margin: 0 auto;
+  width: 50%;
+}
+/* .form-card {
   animation: fade 250ms ease-in-out forwards;
 }
 
@@ -10,9 +14,10 @@
 .multi-step-form {
   overflow: hidden;
   position: relative;
-}
+} */
 
 /* ANIMATION */
+/* 
 .hide {
   display: none;
 }
@@ -44,10 +49,10 @@
     opacity: 0;
     transform: scale(0);
   }
-}
+} */
 
 /* FORM 2 */
-
+/*
 .card-container {
   margin: 2.4rem;
   padding: 2.4rem;
@@ -80,3 +85,4 @@
   width: 40rem;
   height: 40rem;
 }
+*/

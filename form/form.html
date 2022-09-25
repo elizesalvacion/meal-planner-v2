@@ -37,15 +37,33 @@
         </ul>
       </nav>
     </header>
-    <form class="container">
-      <p>How much is your budget?</p>
-      <p>How many people?</p>
-      <p>How many people?</p>
-      <p>Which main ingredient would you like in your meal plan?</p>
-      <p>How many people?</p>
-      <p>For how many days?</p>
+
+    <form class="container-form">
+      <div class="mb-5">
+        <label for="q-1" class="form-label"> <h3>For how many days?</h3></label>
+        <input type="number" class="form-control" id="q-1" placeholder="days" />
+      </div>
+      <div class="mb-5">
+        <label for="q-2" class="form-label"> <h3>How many people?</h3></label>
+        <input
+          type="number"
+          class="form-control"
+          id="q-2"
+          placeholder="how many are you" />
+      </div>
+      <div class="mb-5">
+        <label for="q-3" class="form-label">
+          <h3>Which main ingredient would you like in your meal plan?</h3>
+          <p>Select all possible choices</p></label
+        >
+        <input
+          type="string"
+          class="form-control"
+          id="q-3"
+          placeholder="ingredients" />
+      </div>
     </form>
-    <img src="../img/cooking.svg" />
+    <!-- <img src="../img/cooking.svg" /> -->
 
     <script src="script.js"></script>
   </body>
